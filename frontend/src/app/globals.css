@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f3f2f7;
+  --card: #ffffff;
+  --border: #e2e0ea;
+  --text: #1a2236;
+  --muted: #6b6580;
+  --primary: #4d8ee9;
+}
+
+.dark {
+  --bg: #0d1420;
+  --card: #111c2d;
+  --border: #1e2f44;
+  --text: #f0f4ff;
+  --muted: #6b7a99;
+  --primary: #4d8ee9;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, sans-serif;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+* { box-sizing: border-box; }
